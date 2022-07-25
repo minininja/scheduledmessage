@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.kafka.core.KafkaTemplate
 
 class MessageRelay implements Job {
-    static Logger logerr = LoggerFactory.getLogger(MessageRelay.class)
+    static Logger logger = LoggerFactory.getLogger(MessageRelay.class)
 
     @Autowired
     private KafkaTemplate<String,String> template
